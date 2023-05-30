@@ -168,3 +168,16 @@ JavaScript offers several built in methods that each iterate
 over arrays in slightly different ways to achieve different 
 results (such as every(), forEach(), map(), etc.),
 */
+
+// Iterate Through All an Array's Items Using For Loops
+
+function filteredArray(arr, elem) {
+    let newArr = [];
+    // Only change code below this line
+    for (let)
+  
+    // Only change code above this line
+    return newArr;
+  }
+  
+  console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
