@@ -71,7 +71,7 @@ function htmlColorNames(arr) {
     // Only change code below this line
     const startIndex = 0;
     const amountToDelete = 2;
-    arr.splice(startIndex, amountToDelete, "DarkSalmon", "BlanchedAlmond" )
+    arr.splice(startIndex, amountToDelete, "DarkSalmon", "BlanchedAlmond")
 
     // Only change code above this line
     return arr;
@@ -91,10 +91,10 @@ and the second is the index at which to stop extraction
 
 function forecast(arr) {
     // Only change code below this line
-    return arr.slice(2,4);
-  }
-  // Only change code above this line
-  console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+    return arr.slice(2, 4);
+}
+// Only change code above this line
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 
 //Copy an Array with the Spread Operator
 /*
@@ -108,16 +108,16 @@ let thatArray = [...thisArray];
 function copyMachine(arr, num) {
     let newArr = [];
     while (num >= 1) {
-      // Only change code below this line
-      newArr.push([...arr]);
-  
-      // Only change code above this line
-      num--;
+        // Only change code below this line
+        newArr.push([...arr]);
+
+        // Only change code above this line
+        num--;
     }
     return newArr;
-  }
-  
-  console.log(copyMachine([true, false, true], 2));
+}
+
+console.log(copyMachine([true, false, true], 2));
 
 //Combine Arrays with the Spread Operator
 /*
@@ -130,26 +130,26 @@ and at the start of another. q
 */
 function spreadOut() {
     let fragment = ['to', 'code'];
-    let sentence = ["learning",...fragment, "is", "fun"];
+    let sentence = ["learning", ...fragment, "is", "fun"];
     return sentence;
-  }
-  
-  console.log(spreadOut());
+}
+
+console.log(spreadOut());
 
 
 //Check For The Presence of an Element With indexOf()
 
 function quickCheck(arr, elem) {
 
-if (arr.indexOf(elem) >= 0) {
-    return true
-} else {
-    return false
-}
+    if (arr.indexOf(elem) >= 0) {
+        return true
+    } else {
+        return false
+    }
     // Only change code above this line
-  }
-  
-  console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
 /*
 indexOf(), that allows us to quickly and easily check 
@@ -174,16 +174,73 @@ results (such as every(), forEach(), map(), etc.),
 function filteredArray(arr, elem) {
     let newArr = [];
     // change code below this line
-  
+
     for (let i = 0; i < arr.length; i++) {
-      if (arr[i].indexOf(elem) == -1) {
-        //Checks every parameter for the element and if is NOT there continues the code
-        newArr.push(arr[i]); //Inserts the element of the array in the new filtered array
-      }
+        if (arr[i].indexOf(elem) == -1) {
+            //Checks every parameter for the element and if is NOT there continues the code
+            newArr.push(arr[i]); //Inserts the element of the array in the new filtered array
+        }
     }
-  
+
     // change code above this line
     return newArr;
-  }
-  // change code here to test different cases:
-  console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+}
+// change code here to test different cases:
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+
+// Create complex multi-dimensional arrays
+
+//First approach
+let myNestedArray = [
+    // Only change code below this line
+    'level 1',                   /* myNestedArray[0]             */
+    ['level 2'],	               /* myNestedArray[1][0]          */
+    [['level 3', 'deep']],	       /* myNestedArray[2][0][0]       */
+    [[['level 4', 'deeper']]],    /* myNestedArray[3][0][0][0]    */
+    [[[['level 5', 'deepest']]]]  /* myNestedArray[4][0][0][0][0] */
+    // Only change code above this line
+];
+//Second approach
+let myNestedArray2 = [
+    // change code below this line
+    ["unshift", false, 1, 2, 3, "complex", "nested"],
+    ["loop", "shift", 6, 7, 1000, "method"],
+    ["concat", false, true, "spread", "array", ["deep"]],
+    ["mutate", 1327.98, "splice", "slice", "push", [["deeper"]]],
+    ["iterate", 1.3849, 7, "8.4876", "arbitrary", "depth", [[["deepest"]]]]
+    // change code above this line
+];
+
+// Add Key-Value Pairs to JavaScript Objects
+let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28
+};
+
+// Only change code below this line
+foods.bananas = 13;
+foods.grapes = 35;
+foods.strawberries = 27;
+// Only change code above this line
+
+console.log(foods);
+
+// Modify an Object Nested Within an Object
+
+let userActivity = {
+    id: 23894201352,
+    date: 'January 1, 2017',
+    data: {
+      totalUsers: 51,
+      online: 42
+    }
+  };
+  
+  // Only change code below this line
+  
+  // Only change code above this line
+  
+  console.log(userActivity);
+
+  
