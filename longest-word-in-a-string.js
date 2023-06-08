@@ -2,7 +2,7 @@
 
 function findLongestWordLength(str) {
     let words = str.split(' ');
-    //console.log(words);
+    console.log(words);
     let maxLength = 0;
     let longestWord = '';
 
@@ -13,7 +13,7 @@ function findLongestWordLength(str) {
         }
     }
     // return str.length;
-    //return longestWord;
+    return longestWord;
     return maxLength;
     // console.log(maxLength);
     // console.log(longestWord);
